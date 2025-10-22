@@ -1,5 +1,17 @@
 # Práctico 2B: Documentación y Análisis de Diseño
 
+Este repositorio contiene el trabajo práctico 2B, fork del proyecto base de la cátedra.
+
+**Grupo:**
+* Agostina Cruceño
+* Ana Luz Masoero
+* Leonardo Campos
+* Yaideem Testa
+* Tomas Monzon
+* Manuel Barbieri
+
+---
+
 ## Análisis del Código Base y Patrones de Diseño
 
 A continuación, se documenta el análisis solicitado sobre el patrón de diseño identificado en el código base proporcionado por la cátedra.
