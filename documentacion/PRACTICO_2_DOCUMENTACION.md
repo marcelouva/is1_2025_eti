@@ -5,7 +5,7 @@ Este repositorio contiene el trabajo práctico 2B, fork del proyecto base de la 
 **Grupo:**
 * Agostina Cruceño
 * Ana Luz Masoero
-* Leonardo Campos
+* Leonardo Cesar Campos Pedraza
 * Yaideem Testa
 * Tomas Monzon
 * Manuel Barbieri
