@@ -1,0 +1,44 @@
+flowchart LR
+    subgraph C[Clientes]
+        C1[Cliente]
+        C2[Cliente] 
+        C3[Cliente]
+    end
+
+    I[Internet]
+
+    subgraph api[ Servidor]
+        direction TB
+
+        API[API Gateway / Router]
+
+        subgraph fun[Funcionalidad / Capa de Aplicación]
+            direction LR
+            AU[Autenticacion]
+            GU[Gestion de \n Usuarios]
+            GP[Gestion de \n Profesores]
+            GM[Gestion de \n Materias]
+            AS[Asignacion \n Profesor Materia]
+        end 
+
+        subgraph A[Abstraccion / Capa de Datos]
+            direction LR
+            MU[User Model]
+            MP[Professor Model]
+            MC[Course Model]
+            MD[Dictated Model]
+            CFG[DBConfigSingleton]
+        end    
+        
+        DB[(Base de \n Datos: SQLite)]
+        
+        API --> fun
+        fun <--> A
+        A --> DB
+    end
+
+    C1 --> I
+    C2 --> I
+    C3 --> I 
+
+    I -->API
